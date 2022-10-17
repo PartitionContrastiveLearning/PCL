@@ -39,9 +39,4 @@ src
 We provide hyperparameter combination for reproducibility of experimental results.  
 Refer to best_hyperparameter directory, where we saved each dataset-model combination's best hyperparameter as .json files.
 
-### Pretrained Contrastive Learning Encoders
-
-For **Full data contrastive learning method (B2)** and **PCL (proposed)**, we provide pretrained encoder's weight in pretrained_encoders directory.  
-One can load pretrained encoder (***WRITING***).
-
 ### How to implement codes
