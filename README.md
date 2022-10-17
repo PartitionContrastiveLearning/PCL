@@ -7,9 +7,16 @@
 ## Dataset Description
 
 We provide hypergraph datasets at **URL**. 
+We provide 
+- Each dataset's feature, node label, and hyperedge information.
+- Each dataset's partitioned hypergraph (DBLP: $|\mathcalbf{P}|$)
 Refer to README file in dataset folder.
 
 ## Code Description 
+
+In this repository, we provide source codes for
+- Obtaining performance on proposed task 1 (hyperedge disambiguation)
+- Obtaining performance on proposed task 2 (local clustering)
 
 ### Hyperparameters
 
