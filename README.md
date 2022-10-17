@@ -16,11 +16,32 @@ Refer to README file in dataset folder for more details regarding datasets.
 
 ## Code Description 
 
+### Overview
 In this repository, we provide source codes for
 - Obtaining performance on proposed task 1 (hyperedge disambiguation)
 - Obtaining performance on proposed task 2 (local clustering)
+
+### Dataset
+For dataset one aims to run the code, files of corresponding dataset in **URL** should be located in scr/data folder. 
+For example
+'''
+src
+  |_ data
+      |_ aminer
+            |_ aminer_X_vec.pt
+            |_ aminer_y.pt
+            |_ aminer_E.pt
+            |_ ...
+'''
+
 
 ### Hyperparameters
 
 We provide hyperparameter combination for reproducibility of experimental results.  
 Refer to best_hyperparameter directory, where we saved each dataset-model combination's best hyperparameter as .json files.
+
+### Pretrained Contrastive Learning Encoders
+
+For **Full data contrastive learning method (B2)** and **PCL (proposed)**, we provide pretrained
+
+### How to implement codes
