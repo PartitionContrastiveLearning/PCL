@@ -24,7 +24,7 @@ In this repository, we provide source codes for
 ### Dataset
 For dataset one aims to run the code, files of corresponding dataset in **URL** should be located in scr/data folder. 
 For example
-'''
+```
 src
   |_ data
       |_ aminer
@@ -32,7 +32,7 @@ src
             |_ aminer_y.pt
             |_ aminer_E.pt
             |_ ...
-'''
+```
 
 
 ### Hyperparameters
