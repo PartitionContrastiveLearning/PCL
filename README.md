@@ -8,9 +8,10 @@
 
 We provide hypergraph datasets at **URL**. 
 We provide 
-- Each dataset's feature, node label, and hyperedge information.
-- Each dataset's partitioned hypergraph (DBLP: $|\mathcalbf{P}|$)
-Refer to README file in dataset folder.
+- Each dataset's feature, node label, original hyperedge information, split hyperedge information (for task 1)
+- Each dataset's partitioned hypergraph (# of Partition $|P|$ / DBLP:4, Trivago:32, OGBN_MAG:128, AMINER and MAG: 256)
+- For DBLP, Trivago, OGBN_MAG, we also provide partitioned hypergraph **P-IOS** partition.  
+Refer to README file in dataset folder for more details regarding datasets.
 
 ## Code Description 
 
