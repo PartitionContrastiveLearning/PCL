@@ -40,3 +40,18 @@ We provide hyperparameter combination for reproducibility of experimental result
 Refer to best_hyperparameter directory, where we saved each dataset-model combination's best hyperparameter as .json files.
 
 ### How to implement codes
+
+One can simply run code as follows;  
+For task 1 (hyperedge disambiguation)
+```
+python experiment1 -data "data" -model "learning-method" -device "GPU-device" -lr 0.001 -seed 0 
+```  
+For task 2 (local clustering)
+```
+python experiment2 -data "data" -model "learning-method" -device "GPU-device" -lr 0.001 -seed 0 
+```
+For contrastive learning, additional arguments can be given as   
+```
+python experiment1 -data "data" -model "learning-method" -device "GPU-device" -lr 0.001 -seed 0 -n_neg 1 -d_rate 0.3 -ep 25
+```
+
