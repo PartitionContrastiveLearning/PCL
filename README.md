@@ -41,7 +41,7 @@ Refer to best_hyperparameter directory, where we saved each dataset-model combin
 
 ### How to implement codes
 
-One can simply run code as follows;  
+One can simply run code with codes in src folder as follows;  
 For task 1 (hyperedge disambiguation)
 ```
 python experiment1 -data "data" -model "learning-method" -device "GPU-device" -lr 0.001 -seed 0 
@@ -54,4 +54,12 @@ For contrastive learning, additional arguments can be given as
 ```
 python experiment1 -data "data" -model "learning-method" -device "GPU-device" -lr 0.001 -seed 0 -n_neg 1 -d_rate 0.3 -ep 25
 ```
-
+Arguments are
+- -data : Dataset one wants to perform experiments. (Possible Options: "dblp", "trivago", "ogbn_mag", "aminer", "mag")
+- -model : Training Method one wants to perform experiments. (Possible Options: "mlp", "full_ssl", "full_cl", "part_ssl", "HCL", "HCL_PINS", "HCL_PIOS")
+- -device : GPU machine (e.g. "cuda:0")
+- -lr : Learning rate for method. (float / e.g. 0.001)
+- -n_neg : Applicable to CL methods. Number of negative samples used for CL training. (int / e.g. 2)
+- -d_rate : Applicable to CL methods. Feature & Incidence matrix dropping probability. (float / e.g. 0.3)
+- -ep : Applicable to CL methods. Contrastive encoder's checkpoint for contrastive training. (int / e.g. 25)
+- -seed : Dataset & model initialization seed. (int / e.g. 0)
